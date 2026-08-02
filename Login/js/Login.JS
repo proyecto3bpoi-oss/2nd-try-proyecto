@@ -133,7 +133,7 @@ entrarSupervisor.addEventListener("click", async function () {
         }
 
         window.location.href =
-        "../../../Supervisor/www/1-Evento.html";
+        "../../Supervisor/www/1-Evento.html";
 
     }
     catch (error) {
@@ -172,7 +172,7 @@ entrarMaestro.addEventListener("click", function () {
         );
 
         window.location.href =
-        "../../../Maestro/www/1-dashboard-lleno.html";
+        "../../Maestro/www/1-dashboard-lleno.html";
     }
     catch(error)
     {
@@ -210,7 +210,7 @@ entrarAlumno.addEventListener("click", function () {
             );
 
             window.location.href =
-            "../../../Alumno/www/1-alumnos.html";
+            "../../Alumno/www/1-alumnos.html";
         }
         catch(error)
         {
