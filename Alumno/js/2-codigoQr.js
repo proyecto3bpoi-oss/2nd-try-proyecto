@@ -41,8 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Construir la URL absoluta o relativa a la que apuntará el QR
         // NOTA DE CAMBIO NUEVO: Redirección dinámica hacia 1-votacion.html inyectando el ID por QueryString Parámetros
         const baseProyecto = window.location.pathname.split("/")[1];
-
-        const urlVotacion = `${window.location.origin}/${baseProyecto}/Votacion/www/1-votacion.html?id=${proyectoId}`;
+        const urlVotacion = `${window.location.origin}/${baseProyecto}/Publico/www/1-Votacion.html?id=${proyectoId}`;
         
         // Limpiar contenedor previo e instanciar QR
         const contenedorQR = document.getElementById("qrcode");
