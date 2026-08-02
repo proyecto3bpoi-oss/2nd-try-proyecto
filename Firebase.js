@@ -157,7 +157,7 @@ export async function CrearMaestro(nombre, correo, eventoId) {
     await signInWithEmailAndPassword(
         auth,
         "proyecto.3b.poi@gmail.com",
-        "proyecto123"
+        "123456"
     );
     console.log("Después de iniciar supervisor:", auth.currentUser?.email);
     restaurandoSesion = false;
