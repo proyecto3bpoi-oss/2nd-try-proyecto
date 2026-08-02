@@ -2,7 +2,7 @@ import { auth, db, doc, getDoc, FallaUser, CerrarSesion } from "../../Firebase.j
 
 document.addEventListener("DOMContentLoaded", async () => {
     // Seguridad y validación de sesión
-    await FallaUser("../../../Login/www/Login.HTML");
+    await FallaUser("../../Login/www/Login.HTML");
     
     const usuarioActual = auth.currentUser;
     if (!usuarioActual) return;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const btnSalir = document.querySelector(".btn-logout");
     if (btnSalir) {
         btnSalir.addEventListener("click", () => {
-            CerrarSesion("../../../Login/www/Login.HTML");
+            CerrarSesion("../../Login/www/Login.HTML");
         });
     }
 
@@ -40,8 +40,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Construir la URL absoluta o relativa a la que apuntará el QR
         // NOTA DE CAMBIO NUEVO: Redirección dinámica hacia 1-votacion.html inyectando el ID por QueryString Parámetros
-        const urlVotacion = `${window.location.origin}/Votacion/www/1-votacion.html?id=${proyectoId}`;
+        const baseProyecto = window.location.pathname.split("/")[1];
 
+        const urlVotacion = `${window.location.origin}/${baseProyecto}/Votacion/www/1-votacion.html?id=${proyectoId}`;
+        
         // Limpiar contenedor previo e instanciar QR
         const contenedorQR = document.getElementById("qrcode");
         contenedorQR.innerHTML = "";
