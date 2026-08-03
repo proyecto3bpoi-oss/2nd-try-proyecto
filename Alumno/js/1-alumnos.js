@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (btnSalir) {
         btnSalir.addEventListener("click", () => {
-            CerrarSesion("../../../Login/www/Login.HTML");
+            CerrarSesion("../../Login/www/Login.HTML");
         });
     }
 
