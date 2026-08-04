@@ -49,9 +49,19 @@ const entrarAlumno = document.querySelector("#entrarAlumno");
 const correoAlumno = document.querySelector("#correoAlumno");
 
 
+const terminos = document.getElementById("terminos")
+
+const condicion = document.querySelector("#term")
+
+
 // ======================================================
 // ABRIR DIALOGS
 // ======================================================
+
+terminos.addEventListener("click", function(){
+    condicion.showModal();
+}
+);
 
 btnSupervisor.addEventListener("click", function () {
 
@@ -253,3 +263,4 @@ function cerrarFuera(dialog) {
 cerrarFuera(dialogSupervisor);
 cerrarFuera(dialogMaestro);
 cerrarFuera(dialogAlumno);
+cerrarFuera(condicion);
