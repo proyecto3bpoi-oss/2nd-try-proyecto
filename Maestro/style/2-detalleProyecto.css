@@ -88,7 +88,7 @@ body {
 .tarjeta-proyecto {
     background-color: #1a2746;
     padding: 22px 15px;
-    border-radius: 14px;
+   
     font-size: 16px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -106,7 +106,7 @@ body {
 
 .bloque-info {
     background-color: #1a2746;
-    border-radius: 12px;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +137,7 @@ body {
 
 .panel-alumnos-section5 {
     background-color: #c6e3f7;
-    border-radius: 6px;
+  
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -152,7 +152,7 @@ body {
     background-color: #1a2746;
     color: #ffffff;
     padding: 16px;
-    border-radius: 12px;
+
     text-align: center;
 }
 
